@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((count=$(awk -F: '{print NF}' <<< "$PATH")))
+echo $((count=$(echo "$PATH" | tr ':' '\n' | wc -l)))

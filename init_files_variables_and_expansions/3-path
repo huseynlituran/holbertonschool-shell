@@ -1,3 +1,0 @@
-#!/bin/bash
-count=$(echo "$PATH" | grep -o ":" | wc -l)
-echo $((count + 1))

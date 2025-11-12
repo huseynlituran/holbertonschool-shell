@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This code help us write some outputs after some numbers
+i=1; while [ $i -le 20 ]; do case i in 4) echo "$i"; echo "bad luck from China";; 9) echo "$i"; echo "bad luck from Japan";; 20) echo "$i"; echo "bad luck from Itally";; *) echo "$i";; esac; ((i++)); done 

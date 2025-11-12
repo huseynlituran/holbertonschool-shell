@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# lets pars apache logs
+awk '{count[$1" "$9]++} END {for (pair in count) printf "%8d %s\n", count[pair], pair}' apache-access.log | sort -nr

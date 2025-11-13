@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this script help me to kill process without kill or killall
+PID=$(pgrep -f 7-highlander); echo 15 > "/proc/$PID/signal"

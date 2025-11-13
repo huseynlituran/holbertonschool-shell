@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this code help us to kill 67
+trap 'echo "I am invincible!!!"' SIGTERM; while true; do echo "To infinity and beyond"; sleep 2; done

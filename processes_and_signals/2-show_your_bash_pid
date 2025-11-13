@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this code help us to print lines that have bash
+# shellcheck disable=SC2009
+ps auxf | grep bash
+

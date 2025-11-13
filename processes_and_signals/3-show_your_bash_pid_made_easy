@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this code help us print bash without using ps
+for p in /proc/[0-9]*; do n=$(basename "$p"); [ -f "$p/comm" ] && grep -q bash "$p/comm" && echo "$n $(cat "$p/comm")"; done

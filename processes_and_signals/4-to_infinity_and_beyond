@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# this code help us to create endless loop
+while true; do echo "To infinity and beyond"; sleep 2; done

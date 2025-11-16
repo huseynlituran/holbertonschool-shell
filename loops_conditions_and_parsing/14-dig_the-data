@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
-# lets pars apache logs
-awk '{count[$1" "$9]++} END {for (pair in count) printf "%8d %s\n", count[pair], pair}' apache-access.log | sort -nr
+# Dig the data: group by IP and HTTP status code
+
+file="${1:-apache-access.log}"
+
+awk '{count[$1" "$9]++}
+     END {
+         for (pair in count)
+             printf "%8d %s\n", count[pair], pair
+     }' "$file" | sort -nr
